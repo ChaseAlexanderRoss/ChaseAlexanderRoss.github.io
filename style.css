@@ -1,6 +1,45 @@
 body{
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 header{
+    grid-row: 1;
+    grid-column: 3;
+    /* display: flex;
+    justify-content: center; */
+}
+
+img{
+    height: 25vh;
+    width: auto;
+}
+aside{
+    grid-row: 1 / span 4;
+    grid-column: 1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    height: 10vh;
+}
+
+p{
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
 }
